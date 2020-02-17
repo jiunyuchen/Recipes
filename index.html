@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recipe</title>
+    <!-- Bootstrap Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div class="grid">
+      <!-- Hero -->
+      <header class="hero">
+        <div class="hero__image">
+          <!-- Nav bar -->
+          <nav class="navbar">
+            <div class="layout-container navbar__container">
+              <div class="nav__logo-wrapper">
+                <img src="./images/logo.png" alt="logo" />
+              </div>
+              <div class="navbar__list-wrapper">
+                <ul class="navbar__list">
+                  <li class="navbar__list-item">
+                    <a href="">Log in</a>
+                  </li>
+                  <li class="navbar__list-item">
+                    <a href="">Sign up</a>
+                  </li>
+                  <li class="navbar__list-item">
+                    <a href="">
+                      <i class="fa fa-bars"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="hero__text-container">
+            <p class="hero__subtitle">Find your favorite</p>
+            <h1 class="hero__title">Recipes</h1>
+            <button
+              onclick="location.href='#cuisine-browser'"
+              class="hero__button"
+            >
+              Get Started
+            </button>
+            <p class="hero__tagline">
+              Or send us your own recipes and
+              <span class="hero__tagline--reward">get rewarded</span>!
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main -->
+      <main class="main">
+        <!-- Intro section-->
+        <section class="intro">
+          <div class="intro-card">
+            <div class="intro__image">
+              <div class="intro__circle">
+                <img class="intro-icon" src="./images/burger.png" alt="" />
+              </div>
+            </div>
+            <div class="intro__header">Get Inspired</div>
+            <div class="separator intro__separator"></div>
+            <div class="intro__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              faucibus viverra mi.
+            </div>
+          </div>
+          <div class="intro-card">
+            <div class="intro__image">
+              <div class="intro__circle">
+                <img class="intro-icon" src="./images/money.png" alt="" />
+              </div>
+            </div>
+            <div class="intro__header">Get Rewarded</div>
+            <div class="separator intro__separator"></div>
+            <div class="intro__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              faucibus viverra mi.
+            </div>
+            <div></div>
+          </div>
+          <div class="intro-card">
+            <div class="intro__image">
+              <div class="intro__circle">
+                <img class="intro-icon" src="./images/chef.png" alt="" />
+              </div>
+            </div>
+            <div class="intro__header">Get Social</div>
+            <div class="separator intro__separator"></div>
+            <div class="intro__description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              faucibus viverra mi.
+            </div>
+          </div>
+        </section>
+        <!-- App overview section -->
+        <section class="app-overview">
+          <div class="app-overview__container">
+            <div class="app-overview__mobile-image">
+              <img class="app-overview__mobile-mockup" src="images/phone.png" />
+            </div>
+            <div class="app-overview__description">
+              <h3 class="header">Introducing the Fundi App</h3>
+              <div class="separator"></div>
+              <p class="app-overview__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
+                auctor tellus mauris, sed interdum orci laoreet quis. Nulla
+                commodo elit eros, vitae malesuada lorem sodales sit amet.
+                Vivamus sapien erat, porttitor quis orci blandit, malesuada
+                varius lectus. Vivamus volutpat sodales tortor, at placerat nisl
+                finibus sit amet.
+              </p>
+              <p class="app-overview__paragraph">
+                Ut scelerisque tristique risus. Orci varius natoque penatibus et
+                magnis dis parturient montes, nascetur ridiculus mus. Nulla eu
+                pharetra tellus. Nunc feugiat odio enim, ut hendrerit metus
+                sollicitudin ut. Proin condimentum cursus justo in gravida.
+                Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              </p>
+              <p class="app-overview__paragraph">
+                Ut tortor est, faucibus at ipsum a, fermentum gravida nibh.
+                Donec vel tincidunt est. Phasellus at cursus arcu. Sed rutrum at
+                nisi at tincidunt. Proin a tincidunt sem, lacinia placerat orci.
+              </p>
+              <img src="images/apppstore-01.png" />
+              <img src="images/apppstore-02.png" />
+            </div>
+          </div>
+        </section>
+        <!-- Recommendations section -->
+        <section>
+          <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li
+                data-target="#myCarousel"
+                data-slide-to="0"
+                class="active"
+              ></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img
+                  class="img-carousel"
+                  src="images/slide.png"
+                  style="width:100%;"
+                />
+              </div>
+
+              <div class="item">
+                <img
+                  class="img-carousel"
+                  src="images/slide.png"
+                  style="width:100%;"
+                />
+              </div>
+
+              <div class="item">
+                <img src="images/slide.png" style="width:100%;" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cuisine browser section -->
+        <section id="cuisine-browser" class="cuisine-browser">
+          <div class="cuisine-browser__header-container">
+            <h3 class="header">Browse by Cuisines</h3>
+            <div class="separator cuisine-browser__separator"></div>
+          </div>
+          <div class="cuisine-browser__gallery"></div>
+        </section>
+        <!-- Counter -->
+        <section class="counter__container">
+          <div id="counter__item">
+            <p class="count">23567</p>
+            <p class="counter__description">recipies avaiable</p>
+          </div>
+          <div id="counter__item">
+            <p class="count">431729</p>
+            <p class="counter__description">active users</p>
+          </div>
+          <div id="counter__item">
+            <p class="count">892173</p>
+            <p class="counter__description">positive reviews</p>
+          </div>
+          <div id="counter__item">
+            <p class="count">56581</p>
+            <p class="counter__description">photo & videos</p>
+          </div>
+          <div id="counter__item">
+            <p class="count">3182</p>
+            <p class="counter__description">spices and herbs</p>
+          </div>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer__container">
+          <div>&copy; Fundi. All Rights Reserved</div>
+          <div class="footer__author-info">
+            Designed by:
+            <span class="footer__author-name">Jiunyu Chen</span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
